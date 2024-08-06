@@ -1,0 +1,40 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 6rem; */
+  /* background-color: aquamarine; */
+  height: 90vh;
+  /* background-color: aqua;
+  height: 100vh;
+   */
+   /* height: 100vh; */
+  margin: 3rem 6rem 0;
+}
+
+.menu{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  height: 100vh;
+  background-color: white;
+}
+
+.main{
+  background-color: #100A28;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+@media screen and (max-width:400px){
+  .layout{
+    margin: 0;
+    padding: 10px;
+  }
+}

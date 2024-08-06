@@ -1,0 +1,76 @@
+.projects {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 4rem;
+    align-items: center;
+}
+
+.avatar {
+    width: 35%;
+    background: transparent;
+}
+
+.content {
+    width: 65%;
+}
+
+.content h1 {
+    font-family: "Black Ops One", system-ui;
+    text-transform: uppercase;
+    /* color: #5669d7; */
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+}
+
+
+.myProjects{
+    position: relative;
+    /* background-color: black; */
+    /* z-index: 100; */
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.project{
+    
+    height: 170px;
+    width: 250px;
+    /* background-color: blueviolet; */
+    backdrop-filter: blur(4px);
+    /* background-color: #5669d727; */
+    box-shadow: 0 4px 6px -1px rgba(2, 2, 2, 0.5);
+    /* background-image: url("/public/images/logo\ yellow.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.project:hover{
+    translate:0 -5px ;
+}
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(26, 26, 31 , 0.7);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.icon:hover{
+    opacity: 1;
+
+}
+
+
+
+

@@ -1,0 +1,178 @@
+.container {
+    /* height: 84vh; */
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    translate:-20px -20px;
+    border: none;
+    background-color: aliceblue;
+    /* filter: drop-shadow(0 0 5px #fff); */
+    border: 2px solid rgb(255, 255, 255);
+    filter:brightness(50%);
+
+    /* clip-path: circle(50% at 50% 50%); */
+    background-image: url('images/feizhoulogo.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+.image:hover{
+    /* animation: back 0.7s forwards ease-in-out; */
+    translate: 0 0;
+    filter:brightness(100%);
+    /* border: 2px solid white; */
+
+    
+
+}
+.image:hover .image_container{
+    border: none ;
+    background-color: #5669d7;
+}
+
+@keyframes back {
+    from{
+        translate: -20px -20px;
+    }
+    to{
+        translate: 0px;
+    }
+}
+
+.image_container {
+    position: absolute;
+    /* transform: translateX(50px); */
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(255, 255, 255);
+    /* background-color: blueviolet; */
+    /* box-shadow: 20px 40px 6px -1px rgb(243, 242, 242);  */
+    /* clip-path: circle(50% at 50% 50%); */
+}
+
+
+
+.left_side{
+    /* background-color: blue; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.left_side p{
+    font-family: "Black Ops One", system-ui;
+    text-transform: uppercase;
+    color: #5669d7;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+}
+.left_side h1{
+    background: linear-gradient(to right, #3143a7, #fff 50%, #5669d7);
+    background-size: 200% auto;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Black Ops One", system-ui;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 3.5rem;
+    /* background-color: blue; */
+    width: 450px;
+    animation: gradient 5s linear infinite;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 75%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 7%;
+    }
+
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons button{
+    padding: 15px;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(1){
+    background-color: white;
+    border: none;
+    color: #5669d7;
+    font-weight: bold;
+    font-family: 'Poppins';
+    transition: 0.7s;
+}
+
+.buttons button:nth-child(1):hover{
+    background-color: transparent;
+    border: 1px solid #5669d7;
+    color: white;
+}
+
+.buttons button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #5669d7;
+    color: #5669d7;
+    font-weight: bold;
+    font-family: 'Poppins';
+    transition: 0.7s;
+}
+
+.buttons button:nth-child(2):hover{
+    background-color: white;
+    color: #5669d7;
+}
+
+
+@media screen and (max-width:400px){
+    .container{
+        display: block;
+    }
+    .right_side{
+        display: none;
+    }
+    .left_side{
+        text-align: center;
+        gap: 2rem;
+        /* justify-content: center; */
+        /* background-color: #fff; */
+        /* justify-content: center; */
+    }
+    .buttons {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .left_side h1{
+        font-size : 2rem;
+        background-color: #d8d8d8;
+        width: 100%;
+    }
+}

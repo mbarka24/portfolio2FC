@@ -1,0 +1,56 @@
+.about h1 {
+    font-family: "Black Ops One", system-ui;
+    text-transform: uppercase;
+    /* color: #5669d7; */
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.about p {
+    margin-top: 20px;
+    text-align: justify;
+    color: white;
+    font-family: 'Poppins', Segoe UI;
+    font-size: 0.7em;
+}
+
+.skills {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 25px;
+
+
+}
+
+
+
+.icon {
+    color: #5669d7;
+    font-size: 2.6rem;
+    transition: 0.7s;
+    /* animation: rotateIcon 3s linear forwards; */
+
+}
+
+.skills .icon:hover {
+    color: white;
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotateY(0deg);
+
+    }
+
+    50% {
+        transform: rotateY(360deg);
+
+    }
+    100%{
+    transform: rotateY(0deg);
+
+    }
+}

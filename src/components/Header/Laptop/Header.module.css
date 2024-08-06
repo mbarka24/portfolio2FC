@@ -1,0 +1,80 @@
+.header {
+    position: sticky;
+    /* background-color: brown; */
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-family: "Nosifer", sans-serif;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.social_media .links{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 1.3rem;
+    cursor: pointer;
+    
+}
+.social_media .links a{
+    color: #5669d7;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.social_media .links a:hover{
+    color: white;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    /* border: 1px solid white; */
+    padding: 18px;
+    backdrop-filter: blur(4px);
+    background-color: #5669d727;
+    box-shadow: 0 4px 6px -1px rgba(2, 2, 2, 0.5);
+
+}
+.nav p{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.nav p:hover{
+    color: #5669d7;
+}
+
+
+.active {
+    
+    color: #5669d7;
+
+}
+
+.mobile{
+    display: none;
+}
+
+
+@media screen and (max-width:400px){
+    .header{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+

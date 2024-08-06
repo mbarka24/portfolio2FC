@@ -1,0 +1,13 @@
+.education h1 {
+    font-family: "Black Ops One", system-ui;
+    text-transform: uppercase;
+    /* color: #5669d7; */
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.myEducations{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+}

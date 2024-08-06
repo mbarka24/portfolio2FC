@@ -1,0 +1,12 @@
+
+
+.logo h1 {
+    font-family: "Nosifer", sans-serif;
+    color: white;
+    font-size: 1.8rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

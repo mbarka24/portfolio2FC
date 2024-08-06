@@ -1,0 +1,70 @@
+
+
+.contact{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 4rem;
+    /* align-items: center; */
+
+}
+
+.avatar {
+    width: 40%;
+    /* background: transparent; */
+}
+
+.content{
+    width: 60%;
+}
+
+.contact h1{
+    font-family: "Black Ops One", system-ui;
+    text-transform: uppercase;
+    /* color: #5669d7; */
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.contactInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: rgb(57, 65, 65); */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.info p{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    color: #5669d7;
+    font-family: 'Poppins';
+    font-size: 0.8em;
+    /* background-color: aqua; */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 30px;
+}
+
+.form input, textarea, button{
+    padding: 20px;
+    background: transparent;
+    border: 1px solid #5669d7;
+    background-color: #100A28;
+    outline: none;
+    color: white;
+    transition: 0.7s;
+}
+
+.form button:hover{
+    cursor: pointer;
+    background-color: #5669d7;
+}
