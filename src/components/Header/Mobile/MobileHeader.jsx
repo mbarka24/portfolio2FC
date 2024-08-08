@@ -8,7 +8,7 @@ function MobileHeader() {
         <>
             <header className={styles.header}>
                 <div className={styles.logo}>
-                    <h1>hnn</h1>
+                    <h1>FC</h1>
                 </div>
                 <div className={styles.menu}>
                     <RxHamburgerMenu style={{ fontSize: "40px", color: "white" }} />
